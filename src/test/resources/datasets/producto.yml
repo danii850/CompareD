@@ -1,0 +1,12 @@
+producto:
+  - id: 1
+    nombre: "Manzana"
+    marca: "Alipende"
+    precio: 1
+    precioKilo: 1
+    calorias: 1
+    azucares: 2
+    grasas: 2
+    proteinas: 2
+    carbohidratos: 2
+
