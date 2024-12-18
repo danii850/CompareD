@@ -6,22 +6,37 @@
  version: '3.8'
 
  services:
+ 
   postgres:
+  
     image: postgres:14
+    
     container_name: compared_db
+    
     restart: always
+    
     environment:
+    
       POSTGRES_USER: admin
+      
       POSTGRES_PASSWORD: adminpassword
+      
       POSTGRES_DB: postgres
+      
     volumes:
+    
       - postgres_data:/var/lib/postgresql/data
+      
     ports:
+    
       - "5432:5432"
 
  volumes:
+ 
   postgres_data:
+  
     driver: local
+    
    
 Una vez tengamos nuestro archivo .yml creado iremos con la consola a la raíz de nuestro proyecto y ejecutaremos el comando 
 docker-compose up -d
