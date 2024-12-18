@@ -3,13 +3,13 @@
  Para el despliegue de la aplicación deberemos crear un docker-compose.yml en la raíz de la aplicación que deberá incluir
  ## docker-compose.yml
  
- version: '3.8'
+    version: '3.8'
 
- services:
- 
-  postgres:
-  
-    image: postgres:14
+    services:
+    
+    postgres:
+    
+      image: postgres:14
     
     container_name: compared_db
     
@@ -30,10 +30,11 @@
     ports:
     
       - "5432:5432"
+      
 
- volumes:
+    volumes:
  
-  postgres_data:
+    postgres_data:
   
     driver: local
     
