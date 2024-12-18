@@ -39,11 +39,14 @@
     driver: local
     
    
-Una vez tengamos nuestro archivo .yml creado iremos con la consola a la raíz de nuestro proyecto y ejecutaremos el comando 
-docker-compose up -d
+Una vez tengamos nuestro archivo .yml creado iremos con la consola a la raíz de nuestro proyecto y ejecutaremos el comando
+
+    docker-compose up -d
 
 Ahora veremos si nuestro contenedor está arrancado en Docker, si es así, entonces procederemos a arrancar el back usando
 IntelliJ y para arrancar Vue.js nos iremos a la carpeta del proyecto de front en este caso /frontend y abriremos la terminal
-y escribiremos npm run serve.
+y escribiremos
+
+    npm run serve.
 
 Y así ya tendremos nuestra aplicación funcionando
